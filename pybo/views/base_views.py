@@ -2,11 +2,14 @@ from django.shortcuts import render, get_object_or_404, redirect
 from ..models import Question
 from django.db.models import Q, Count
 from django.core.paginator import Paginator
-
+# ---------------------------------- [edit] ---------------------------------- #
+import logging
+logger = logging.getLogger('pybo')
+# ---------------------------------------------------------------------------- #
 
 def index(request):
 # ---------------------------------- [edit] ---------------------------------- #
-    3 / 0  # 강제로 오류발생
+    logger.info("INFO 레벨로 출력")
 # ---------------------------------------------------------------------------- #
     """
         pybo 목록 출력
